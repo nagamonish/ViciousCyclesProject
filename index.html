@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Document</title>
+   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    html{
+        background-color: #DCE1E3;
+    }
+    body {
+    font-family: 'Noto Sans', sans-serif;
+    }
+    a {
+    text-decoration: none;
+    }
+    li {
+    list-style: none;
+    }
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #5C5F58;
+    color: white;
+    }
+    .nav-links a {
+    color: white;
+    }
+    .logo {
+    font-size: 23px;
+    }
+    .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    }
+    .menu li:hover {
+    background-color: #a8a8a8;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    }
+    .menu li {
+    padding: 5px 14px;
+    }
+    .navItem {
+    position: relative; 
+    }
+    .dropdown {
+    background-color: #5C5F58;
+    padding: 1em 0;
+    position: absolute; 
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+    }
+    .dropdown li + li {
+    margin-top: 10px;
+    }
+    .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+    }
+    .dropdown li:hover {
+    background-color: #a8a8a8;
+    }
+    .navItem:hover .dropdown {
+    display: block;
+    }
+    #top_sec{
+        height: 740px;
+        width: 1450px;
+    }
+
+
+    #mtnBike{
+        padding-top: 45px;
+        padding-left: 25px;
+        height: 500px;
+        width: 700px;
+        float: left;
+    }
+
+    #mtnTitle{
+        padding-left: 990px;
+        padding-top: 230px;
+    }
+
+    #mtnText{
+        padding-top: 25px;
+        padding-left: 720px;
+        font-size: large;
+    }
+
+    #rceBike{
+        padding-top: 250px;
+        padding-left: 25px;
+        height: 700px;
+        width: 700px;
+        float: right;
+        padding-right: 25px;
+    }
+
+    #rceTitle{
+        float: left;
+        padding-left: 200px;
+        padding-top: 270px;
+    }
+
+    #rceText{
+        float: left;
+        margin-top: 50px;
+        width: 700px;
+        padding-left: 25px;
+        font-size: large;
+    }
+    #footer{
+        margin-top: 800px;
+        background-color: rgb(70, 70, 70);
+        height: 200px;
+    }
+    #footTxt{
+        padding-left: 410px;
+        padding-top: 100px;
+        color: white; 
+    }
+   </style>
+ </head>
+ <body>
+   <nav class="navbar">
+     <div class="logo">Vicious Cycles</div> 
+     <ul class="nav-links">
+       <div class="menu">
+         <li><a href="/">Home</a></li>
+
+         <li class="navItem">
+            <a href="/">Services</a>
+            <ul class="dropdown">
+              <li><a href="/">Repairs  </a></li>
+              <li><a href="/">Picking the right bike </a></li>
+            </ul>
+          </li>
+
+         <li class="navItem">
+           <a href="/">Types of Bikes</a>
+           <ul class="dropdown">
+             <li><a href="/">Mountain  </a></li>
+             <li><a href="/">Race </a></li>
+             <li><a href="/">Electric</a></li>
+           </ul>
+         </li>
+
+         <li class="navItem">
+           <a href="/">Accessories</a>
+           <ul class="dropdown">
+             <li><a href="/">Rider Gear</a></li>
+             <li><a href="/">Bike Gear</a></li>
+           </ul>
+         </li>
+         
+         <li class="navItem">
+           <a href="/">Contact</a>
+           <ul class="dropdown">
+             <li><a href="/">Contact Us</a></li>
+             <li><a href="/">Customer Reviews</a></li>
+           </ul>
+         </li>
+       </div>
+     </ul>
+   </nav>
+   
+   <section>
+    <img id="top_sec" src="bicycle.jpeg" alt="bicycle">
+   </section>
+
+   <section>
+    <img id="mtnBike" src="MountainBike.jpeg" alt="bike1">
+    <h1 id="mtnTitle">Mountain Bikes</h1>
+    <p id="mtnText">Do you love to go on adventures or on trails? If you said yes, then this is the perfect type of bike for you. Our mountain bikes are made from high quality parts, that come at a very cheap price when you need them. Its not much profit for us, but as long as our customers are happy, we are also happy</p>
+   </section>
+   
+   <section>
+    <img id="rceBike" src="raceBike.jpeg" alt="bike1">
+    <h1 id="rceTitle">Race Bikes</h1>
+    <p id="rceText">Are you one of those people who gets an adrenaline rush when you are riding super fast down a hill on a bicycle? If you said yes, then this is the perfect type of bike for you. DEITY sponsors us so we use the premium race parts provided by them and attach them to our bicycles. There are a variety of race bikes to choose from, so it might be better for you to come in store to purchase the right bike for you. </p>
+   </section>
+   
+   <footer id="footer">
+    <p id="footTxt">MORE CONTENT WILL BE RELEASED SOON. THE NAVIGATION DOES NOT WORK YET.</p>
+   </footer>
+
+
+ </body>
+</html>
